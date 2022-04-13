@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GeradorFragment"
+    android:background="@color/silver">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Abaixo gerador de senhas aleatórias, favor considerar quantos caracteres te forem necessários."
+         android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         android:gravity="center"
+        android:id="@+id/resultGerador"
+        style="@style/TextShape"
+        android:padding="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+          />
+
+    <ImageView
+        android:id="@+id/copytext"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_copy"
+        app:layout_constraintStart_toStartOf="@id/resultGerador"
+        app:layout_constraintEnd_toEndOf="@id/resultGerador"
+        app:layout_constraintTop_toTopOf="@id/resultGerador"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="280dp"
+             />
+
+
+    <Button
+        android:id="@+id/Gerar"
+    app:layout_constraintTop_toBottomOf="@id/resultGerador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="@string/gerar_senha"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        style="@style/TextShape"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
